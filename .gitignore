@@ -6,12 +6,33 @@
 .cache
 dist
 
+# Local storage
+uploads/
+/data/
+
+# Database
+*.db
+*.db-journal
+
 # Node dependencies
 node_modules
+.pnpm-store
+bun.lockb
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_store
+Thumbs.db
 
 # Logs
 logs
 *.log
+npm-debug.log*
 
 # Misc
 .DS_Store

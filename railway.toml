@@ -1,0 +1,18 @@
+[build]
+builder = "nixpacks"
+buildCommand = "bun install && bun run build"
+
+[deploy]
+startCommand = "bun run .output/server/index.mjs"
+healthcheckPath = "/api/health"
+healthcheckTimeout = 100
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
+
+# Volume configuration for file storage
+[[deploy.volumes]]
+mountPath = "/data"
+name = "zume-storage"
+
+[env]
+NODE_ENV = "production"
