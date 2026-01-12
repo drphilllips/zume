@@ -1,28 +1,22 @@
 <template>
   <div>
     <UPageHero
-      title="Nuxt Starter Template"
-      description="A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours."
+      headline="Alpha v.0.1"
+      title="Zume"
+      description="Fast-forward your job-search"
       :links="[{
         label: 'Get started',
-        to: 'https://ui.nuxt.com/docs/getting-started/installation/nuxt',
+        to: '/login',
         target: '_blank',
+        external: false,
         trailingIcon: 'i-lucide-arrow-right',
         size: 'xl'
-      }, {
-        label: 'Use this template',
-        to: 'https://github.com/nuxt-ui-templates/starter',
-        target: '_blank',
-        icon: 'i-simple-icons-github',
-        size: 'xl',
-        color: 'neutral',
-        variant: 'subtle'
       }]"
     />
 
     <UPageSection
       id="features"
-      title="Everything you need to build modern Nuxt apps"
+      title="Everything you need to beat AI job screeners"
       description="Start with a solid foundation. This template includes all the essentials for building production-ready applications with Nuxt UI's powerful component system."
       :features="[{
         icon: 'i-lucide-rocket',

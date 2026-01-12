@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 useHead({
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
@@ -11,42 +11,45 @@ useHead({
   }
 })
 
-const title = 'Nuxt Starter Template'
-const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+const title = 'Zume'
+const description = 'Zume is an AI-powered resume optimizer that allows users to upload their CV and receive tailored resumes, cover letters, and hiring manager messages for specific jobs.'
 
 useSeoMeta({
   title,
   description,
   ogTitle: title,
   ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
+  // ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
+  // twitterImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
   twitterCard: 'summary_large_image'
 })
+
+const loggedIn = false
+const username = "Test Person"
+const logout = () => {}
 </script>
 
 <template>
   <UApp>
     <UHeader>
       <template #left>
-        <NuxtLink to="/">
-          <AppLogo class="w-auto h-6 shrink-0" />
+        <NuxtLink to="/" class="text-xl font-bold italic">
+          ᯓ Zume
         </NuxtLink>
-
-        <TemplateMenu />
       </template>
-
       <template #right>
-        <UColorModeButton />
+        <nav v-if="loggedIn" class="flex items-center gap-4">
+          <span>Hello, {{ username }}</span>
+          <UButton @click="logout">
+            Logout
+          </UButton>
+        </nav>
 
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
+        <nav v-else class="flex gap-4">
+          <UButton to="/login">
+            Login
+          </UButton>
+        </nav>
       </template>
     </UHeader>
 
@@ -54,25 +57,8 @@ useSeoMeta({
       <NuxtPage />
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
-
     <UFooter>
-      <template #left>
-        <p class="text-sm text-muted">
-          Built with Nuxt UI • © {{ new Date().getFullYear() }}
-        </p>
-      </template>
-
-      <template #right>
-        <UButton
-          to="https://github.com/nuxt-ui-templates/starter"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-          color="neutral"
-          variant="ghost"
-        />
-      </template>
+      © 2026 Zume
     </UFooter>
   </UApp>
 </template>

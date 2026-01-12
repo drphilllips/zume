@@ -20,6 +20,11 @@ export default defineNuxtConfig({
     },
   },
 
+  // Configure session behavior
+  auth: {
+    loadStrategy: 'auto', // 'auto' | 'client-only' | 'none'
+  },
+
   // Enable server-side rendering
   ssr: true,
 
