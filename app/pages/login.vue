@@ -1,12 +1,77 @@
+<script setup lang="ts">
+const { loggedIn, fetch: fetchSession, openInPopup } = useUserSession()
+const toast = useToast()
+
+// Redirect if already logged in
+if (loggedIn.value) {
+  navigateTo('/dashboard')
+}
+
+const loading = ref(false)
+
+async function signInWithGoogle() {
+  try {
+    loading.value = true
+
+    // Open OAuth in popup
+    await openInPopup('/api/auth/google')
+
+    // Fetch the updated session
+    await fetchSession()
+
+    // Show success message
+    toast.add({
+      title: 'Welcome!',
+      description: 'You have successfully signed in.',
+      color: 'success'
+    })
+
+    // Redirect to dashboard
+    await navigateTo('/dashboard')
+  } catch (error) {
+    console.error('Google sign-in failed:', error)
+
+    toast.add({
+      title: 'Sign in failed',
+      description: 'Unable to sign in with Google. Please try again.',
+      color: 'error'
+    })
+  } finally {
+    loading.value = false
+  }
+}
+</script>
+
 <template>
-  <div class="container mx-auto items-center justify-center px-4 py-8">
-    <UCard>
+  <UContainer class="min-h-dvh flex items-center justify-center">
+    <UCard class="w-full max-w-md">
       <template #header>
-        <h2 class="text-xl font-semibold">Google OAuth Login Card</h2>
+        <div class="text-center space-y-2">
+          <h2 class="text-2xl font-bold">
+            Welcome to <span class="text-primary italic">ᯓ Zume</span>
+          </h2>
+          <p class="text-muted">Sign in to optimize your resume</p>
+        </div>
       </template>
-      <UButton to="/">
-        Return to Home
-      </UButton>
+
+      <div class="space-y-4">
+        <UButton
+          @click="signInWithGoogle"
+          color="neutral"
+          variant="outline"
+          size="lg"
+          block
+          leading-icon="i-simple-icons-google"
+          :loading="loading"
+          :disabled="loading"
+        >
+          {{ loading ? 'Signing in...' : 'Continue with Google' }}
+        </UButton>
+
+        <p class="text-xs text-center text-muted">
+          By continuing, you agree to our Terms of Service and Privacy Policy
+        </p>
+      </div>
     </UCard>
-  </div>
+  </UContainer>
 </template>

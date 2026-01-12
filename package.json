@@ -27,6 +27,7 @@
     "jspdf": "^4.0.0",
     "mammoth": "^1.11.0",
     "nuxt": "^4.2.2",
+    "nuxt-auth-utils": "^0.5.26",
     "pdf-parse": "^2.4.5",
     "postgres": "^3.4.8",
     "zod": "^4.3.5"
