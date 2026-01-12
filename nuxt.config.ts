@@ -3,7 +3,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
-    'nuxt-auth-utils',
   ],
 
   runtimeConfig: {
@@ -18,11 +17,6 @@ export default defineNuxtConfig({
     public: {
       baseUrl: process.env.BASE_URL || 'http://localhost:3000',
     },
-  },
-
-  // Configure session behavior
-  auth: {
-    loadStrategy: 'auto', // 'auto' | 'client-only' | 'none'
   },
 
   // Enable server-side rendering
