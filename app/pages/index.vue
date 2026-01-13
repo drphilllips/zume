@@ -89,7 +89,7 @@ useSeoMeta({
         </p>
 
         <div class="flex gap-4 justify-center pt-4">
-          <UButton
+          <!-- <UButton
             v-if="!loggedIn"
             to="/login"
             size="xl"
@@ -99,6 +99,13 @@ useSeoMeta({
           </UButton>
           <UButton
             v-else
+            to="/dashboard"
+            size="xl"
+            icon="i-lucide-layout-dashboard"
+          >
+            Go to Dashboard
+          </UButton> -->
+          <UButton
             to="/dashboard"
             size="xl"
             icon="i-lucide-layout-dashboard"

@@ -34,7 +34,7 @@ async function logout() {
         </NuxtLink>
       </template>
 
-      <template #right>
+      <!-- <template #right>
         <div v-if="loggedIn" class="flex items-center gap-4">
           <span class="text-sm">Hello, {{ user?.name }}</span>
           <UButton
@@ -54,7 +54,7 @@ async function logout() {
         >
           Login
         </UButton>
-      </template>
+      </template> -->
     </UHeader>
 
     <UMain>
