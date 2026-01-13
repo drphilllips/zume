@@ -22,8 +22,8 @@ export default defineNuxtConfig({
     // Setup Google OAuth
     oauth: {
       google: {
-        clientId: '',
-        clientSecret: '',
+        clientId: process.env.NUXT_OAUTH_GOOGLE_CLIENT_ID,
+        clientSecret: process.env.NUXT_OAUTH_GOOGLE_CLIENT_SECRET,
       }
     }
   },
