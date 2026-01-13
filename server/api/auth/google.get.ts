@@ -1,27 +1,39 @@
+
 export default defineOAuthGoogleEventHandler({
   async onSuccess(event, { user, tokens }) {
-    // user object from Google contains:
-    // - email: string
-    // - name: string
-    // - picture: string (profile pic URL)
-    // - sub: string (Google unique ID)
+    console.log('🔍 OAuth Success - User data:', user)
+    console.log('🔍 OAuth Success - Tokens:', tokens)
 
-    await setUserSession(event, {
-      user: {
-        email: user.email,
-        name: user.name,
-        picture: user.picture,
-        googleId: user.sub
-      },
-      loggedInAt: Date.now()
-    })
+    try {
+      const sessionData = {
+        user: {
+          email: user.email,
+          name: user.name,
+          picture: user.picture,
+          googleId: user.sub
+        },
+        loggedInAt: Date.now()
+      }
 
-    return sendRedirect(event, '/dashboard')
+      console.log('🔍 Setting user session with:', sessionData)
+
+      await setUserSession(event, sessionData)
+
+      console.log('✅ User session set successfully')
+
+      // Verify session was set
+      const session = await getUserSession(event)
+      console.log('🔍 Retrieved session:', session)
+
+      return sendRedirect(event, '/dashboard')
+    } catch (error) {
+      console.error('❌ Error setting user session:', error)
+      return sendRedirect(event, '/?error=session_failed')
+    }
   },
 
-  // Optional error handler
   onError(event, error) {
-    console.error('Google OAuth error:', error)
+    console.error('❌ Google OAuth error:', error)
     return sendRedirect(event, '/?error=auth_failed')
   }
 })

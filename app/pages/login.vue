@@ -1,11 +1,13 @@
 <script setup lang="ts">
-const { loggedIn, fetch: fetchSession, openInPopup } = useUserSession()
+const { loggedIn, ready, fetch: fetchSession, openInPopup } = useUserSession()
 const toast = useToast()
 
-// Redirect if already logged in
-if (loggedIn.value) {
-  navigateTo('/dashboard')
-}
+// Wait for session to load, then redirect if already logged in
+watch(ready, () => {
+  if (ready.value && loggedIn.value) {
+    navigateTo('/dashboard')
+  }
+}, { immediate: true })
 
 const loading = ref(false)
 
