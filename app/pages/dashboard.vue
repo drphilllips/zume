@@ -38,7 +38,7 @@ const { user } = useUserSession()
                 block
                 leading-icon="i-lucide-upload"
               >
-                Upload Resume
+                Build CV
               </UButton>
               <UButton
                 variant="outline"
