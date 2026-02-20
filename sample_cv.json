@@ -1,0 +1,390 @@
+{
+    "header": {
+        "name": "Dylan Phillips",
+        "location": "Cupertino, CA",
+        "phone": "(408) 966-5319",
+        "email": "dphillips072402@gmail.com",
+        "socials": [
+            {
+                "name": "LinkedIn",
+                "link": "https://www.linkedin.com/in/dylan-phillips-17b3001b5/"
+            },
+            {
+                "name": "GitHub",
+                "link": "https://github.com/drphilllips"
+            },
+            {
+                "name": "Portfolio",
+                "link": "https://dylanphillips.vercel.app"
+            }
+        ]
+    },
+    "summary": "Full-Stack Developer & AI Software Engineer | Building Scalable Solutions That Drive Business Impact",
+    "education": [
+        {
+            "school": "Worcester Polytechnic Institute (WPI)",
+            "degree": "M.S. in Data Science, B.S. in Computer Science",
+            "start_date": "2020-08",
+            "end_date": "2024-12",
+            "location": "Worcester, MA",
+            "gpa": 3.8,
+            "gpa_scale": 4.0,
+            "relevant_courses": [
+                "Object-Oriented Porgramming", "Systems Programming", "Algorithms",
+                "Software Engineering", "Operating Systems", "Artificial Intelligence (Grad)",
+                "Machine Learning (Grad)", "Big Data Analytics (Grad)", "Data Mining (Grad)",
+                "User Experience Design (Grad)", "Database Management Systems (Grad)", "Statistics for Data Science (Grad)",
+                "Project Management (Grad)", "Marketing Analytics (Grad)", "Business Intelligence (Grad)"
+            ]
+        },
+        {
+            "school": "Saint Francis High School",
+            "start_date": "2016-08",
+            "end_date": "2020-05",
+            "location": "Mountain View, CA",
+            "gpa": 4.2,
+            "gpa_scale": 4.0,
+            "relevant_courses": [
+                "AP Calculus", "AP Physics", "AP Statistics",
+                "AP Computer Science", "AP Chinese"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "group_name": "Programming Languages",
+            "group_skills": [
+                "Python", "Java", "C", "C++", "HTML", "CSS",
+                "JavaScript", "TypeScript", "SQL"
+            ]
+        },
+        {
+            "group_name": "Frameworks & Libraries",
+            "group_skills": [
+                "React", "React-Native", "NodeJS", "Django", "Framer Motion", "Pandas",
+                "PyQT", "Numpy"
+            ]
+        },
+        {
+            "group_name": "Data Science & AI",
+            "group_skills": [
+                "Machine Learning", "Clustering", "LangGraph", "LangChain", "PyTorch", "TensorFlow",
+                "Keras", "Scikit-Learn", "NLP"
+            ]
+        },
+        {
+            "group_name": "Software Engineering",
+            "group_skills": [
+                "Project Management", "Full-Stack Development", "REST APIs", "Agile", "Scrum", "Git",
+                "CI/CD"
+            ]
+        },
+        {
+            "group_name": "Event Planning & Leadership",
+            "group_skills": [
+                "Philanthropy", "Community Engagement", "Professional Communication"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "company": "5280 Auto Body Shop",
+            "role": "Web & Mobile Application Developer",
+            "start_date": "2025-06",
+            "location": "Englewood, CO",
+            "bullets": [
+                "Envisioned & engineered a **full-stack web & mobile application** (Figma, Django, React, React-Native) for auto body shops to **enhance engagement between customers and employees**, encouraging **repeat business**",
+                "New _repairs process faster_ and overall _repair times are reduced_, **saving shops time and money**"
+            ]
+        },
+        {
+            "company": "Socotec",
+            "role": "AI Software Engineer",
+            "start_date": "2024-10",
+            "end_date": "2025-06",
+            "location": "Remote",
+            "bullets": [
+                "Led UX of Conflict Check **web application** (Figma, React, Django, PostgreSQL) for **150+ executives/managers**; new client leads processed up to **48 hours sooner**, reducting costs by **$3,000,000/day saved**",
+                "Developed a **React Native app** (iOS + Android) for **100+** Building Envelope inspectors featuring _speech-to-report_ (OpenAI Whisper + AWS ChatBedrock) and _DOCX/PDF generation_; reduced report writing time by **6 hours/report** saving inspectors **30 hours/week**",
+                "Build a cost-efficient **Document QA Agent** (LangChain, LangGraph, AWS ChatBedrock) for **over 14,000 employees**; generates _document summaries_ and _tables_ upon request, **bosting efficiency** and **increasing data access**"
+            ]
+        },
+        {
+            "company": "The Hanover Insurance Group",
+            "role": "Data Science Consultant",
+            "start_date": "2024-08",
+            "end_date": "2024-12",
+            "location": "Worcester, MA",
+            "bullets": [
+                "Built **customer segmentation models** for **5M+ rows** of data, each with **over 1500 features**",
+                "Created **customer segments** via _dimensionality reduction_ and _k-means clustering_; defined **segment profiles** using _statistics_ and insurance _domain knowledge_; presented **business outcomes** to executive stakeholders",
+                "Earned the **Bronze Graduate Qualifying Project Award** and **Team MVP** for our **impactful presentation**"
+            ]
+        },
+        {
+            "company": "Harper & Two",
+            "role": "Contract Python Automation Engineer",
+            "start_date": "2024-08",
+            "end_date": "2024-10",
+            "location": "Remote",
+            "bullets": [
+                "Led **contract development** of a **commissions processing tool**; implemented a _continuous learning system_",
+                "**Reduced costs by 3x**, going from **3** accountants to only **1** system admin"
+            ]
+        },
+        {
+            "company": "Taarcom",
+            "role": "Python Automation Engineer",
+            "start_date": "2022-06",
+            "end_date": "2024-08",
+            "location": "Santa Clara, CA",
+            "bullets": [
+                "Developed **3 Python Excel-automation apps** (PyQT, Pandas) and redesigned the **company website** (Wix)",
+                "Automated **data lookups** and **report generation**, saving inside sales team **10+hours/month**",
+                "Created a **commissions analysis program** to _query data upon request_, increasing **data leverage** for sales decisions"
+            ]
+        },
+        {
+            "company": "iD Tech",
+            "role": "Online STEM Instructor",
+            "start_date": "2022-05",
+            "end_date": "2022-06",
+            "location": "Remote",
+            "bullets": [
+                "Tailored **online lesson plans** and taugh K-12 students in _math_, _science_, and _programming_",
+                "Received **5-star reviews through all my lessons**"
+            ]
+        },
+        {
+            "company": "Chipotle",
+            "role": "Crew Member",
+            "start_date": "2019-08",
+            "end_date": "2020-08",
+            "location": "Cupertino, CA",
+            "bullets": [
+                "Experience in a **high-efficiency restaurant** as burrito-roller, cashier, dish-washer, and janitor",
+                "Learned to value _hard work_ and _teamwork_"
+            ]
+        },
+        {
+            "company": "Math Enrichment",
+            "role": "Math & English Teacher's Assistant",
+            "start_date": "2018-06",
+            "end_date": "2018-08",
+            "location": "Cupertino, CA",
+            "bullets": [
+                "**Over 100 hours of volunteer service** teaching elementary _math_ & _English_",
+                "Paid service for _morning and after-school care_"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Portfolio Website",
+            "start_date": "2025-12",
+            "end_date": "2025-12",
+            "skills": [
+                "React", "Framer Motion"
+            ],
+            "bullets": [
+                "Designed and deployed a **feature-rich user experience** with _React_ & _Framer Motion_",
+                "Created a repeatable, **responsive layout** to provide a _streamlined UI_ across all devices",
+                "**Continuous Integration & Deployment (CI/CD)** with _Vercel_"
+            ]
+        },
+        {
+            "name": "Minecraft Playground",
+            "start_date": "2025-11",
+            "end_date": "2025-12",
+            "skills": [
+                "React", "Algorithms"
+            ],
+            "bullets": [
+                "Developed **procedural** web-based tools for grid-circle, dome, and image generation",
+                "Used **LAB-color conversions** and **algorithms** to translate images to Minecraft block art",
+                "Crafted a **responsive design** to have a _seamless UI_ across all devices"
+            ]
+        },
+        {
+            "name": "Event task Manager",
+            "start_date": "2024-01",
+            "end_date": "2024-05",
+            "skills": [
+                "PostgreSQL", "Express", "React", "NodeJS"
+            ],
+            "bullets": [
+                "Designed and deployed a **full-stack** _PostgreSQL_, _Express_, _React_, and _NodeJS_ system for the WPI Events Office",
+                "Improved **communication**, raised **awareness** of events, and increased **access** to event resources"
+            ]
+        },
+        {
+            "name": "EcoTarium Explorer Accessibility App",
+            "start_date": "2023-05",
+            "end_date": "2024-03",
+            "skills": [
+                "Figma", "React-Native", "Omeka CRM"
+            ],
+            "bullets": [
+                "Developed a **React-Native mobile app** with _GPS-navigation_, _speech-to-text_ and _screen-reader compatibility_",
+                "Empowers **visually-impaired visitors** to _navigate safely_ and _experience exhibits fully_",
+                "Provides **all visitors** _engaging content_ and _live updates_ to encourage **repeat attendance**"
+            ]
+        },
+        {
+            "name": "New Recruitment Channels Research Project",
+            "start_date": "2022-08",
+            "end_date": "2022-12",
+            "skills": [
+                "Project Management", "Data Collection", "Data Analysis"
+            ],
+            "bullets": [
+                "Collected data from _surveys_, _focus groups_, and _interfiews_ with **over 200** Chinese students and employers",
+                "Used **factor analysis** and **multiple linear regression** to identify _key factors in networking success_"
+            ]
+        }
+    ],
+    "organizations": [
+        {
+            "name": "WPI Varsity Rowing",
+            "role": "Team Member",
+            "start_date": "2023-10",
+            "end_date": "2024-12",
+            "bullets": [
+                "Walked on as a senior, demonstrating commitment to **hard work** and **perseverance**",
+                "Developed _teamwork_ and _leadership skills_ through rigorous training and competition"
+            ]
+        },
+        {
+            "name": "WPI Greek Life",
+            "role": "VP of Programming",
+            "start_date": "2023-01",
+            "end_date": "2023-04",
+            "bullets": [
+                "Organized **large-scale events** for **1500+ Greek-life members**, fostering _engagement_ and _community_",
+                "Managed _logistics_, _budgeting_, and _execution_ of **Greek Week**, a week-long event series"
+            ]
+        },
+        {
+            "name": "Sigma Alpha Epsilon Fraternity",
+            "role": "Community Service Chairman",
+            "start_date": "2022-05",
+            "end_date": "2022-12",
+            "bullets": [
+                "**Established lasting relationships** with **two** national service organizations",
+                "Lead organizer of **two signature service events** with Be the Match and Sleep in Heavenly Peace"
+            ]
+        },
+        {
+            "name": "WPI Varsity Baseball",
+            "role": "Team Member",
+            "start_date": "2020-09",
+            "end_date": "2021-05",
+            "bullets": [
+                "Applied _teamwork_ and _discipline_ in a competitive athletic environment"
+            ]
+        }
+    ],
+    "volunteering": [
+        {
+            "organization": "Shaka + Sigma Alpha Epsilon Fraternity",
+            "event": "Maui Strong Fundraiser",
+            "role": "Co-organizer",
+            "start_date": "2023-08",
+            "end_date": "2023-09",
+            "bullets": [
+                "Co-organized a **campus-wide fundraising event** at WPI in response to Maui's disastrous 2023 Lahaina wildfires",
+                "**Raised $2,300 over three days** selling homemade Hawaiian food to hungry WPI students",
+                "Donated all proceeds to _Maui United Way_ for an **equitable rebuild in Lahaina**"
+            ]
+        },
+        {
+            "organization": "WPI Greek Life",
+            "event": "Greek Week",
+            "role": "Co-organizer",
+            "start_date": "2023-01",
+            "end_date": "2023-04",
+            "bullets": [
+                "Co-organized a week of fun for **more than 1500 fraternity and sorority members**",
+                "**Seven days of campus-wide events** with _philanthropy_, _community service_, and a _talent show_"
+            ]
+        },
+        {
+            "organization": "Be the Match + Sigma Alpha Epsilon Fraternity",
+            "event": "Be the Match on the Quad",
+            "role": "Lead Organizer",
+            "start_date": "2022-08",
+            "end_date": "2022-10",
+            "bullets": [
+                "**Lead organizer** of SAE's **signature service event** with food, music, and **over 100 volunteers**",
+                "**Recruited over 500 potential stem-cell donors** for cancer patients in need"
+            ]
+        },
+        {
+            "organization": "Saint Francis High School Programming Club",
+            "event": "LancerHacks 2020",
+            "role": "Co-organizer",
+            "start_date": "2019-10",
+            "end_date": "2020-03",
+            "bullets": [
+                "**Co-organizer** of Saint Francis' **first ever 12-hour hackathon**",
+                "Host to **over 200 attendees** and **50+ guest speakers** from Silicon Valley tech companies"
+            ]
+        }
+    ],
+    "awards": [
+        {
+            "name": "Bronze Graduate Qualifying Project Award & Team MVP",
+            "organization": "The Hanover Insurance Group",
+            "date": "2024"
+        },
+        {
+            "name": "Presidential Scholarship",
+            "organization": "Worcester Polytechnic Institute",
+            "date": "2024",
+            "description": "Recipient from 2020 to 2024"
+        },
+        {
+            "name": "AP Chinese Student of the Year",
+            "organization": "Saint Francis High School",
+            "date": "2020"
+        },
+        {
+            "name": "Br. Eamon Schaffer Service Award",
+            "organization": "Saint Francis High School",
+            "date": "2018",
+            "description": "Over 100 hours of community service in one year"
+        }
+    ],
+    "publications": [
+        {
+            "title": "EcoTarium Explorer: Increasing Accessibility at the Worcester EcoTarium",
+            "publisher": "WPI",
+            "date": "2024",
+            "bullets": [
+                "Organized **key user studies** with _visually impaired participants_, converted results into **impactful code**",
+                "Developed **critical accessibility features**, _speech-to-text_, _screen-reader compatibility_, and _GPS navigation_"
+            ]
+        },
+        {
+            "title": "New Recruitment Channels: Exploration of College Student Employment in China",
+            "publisher": "WPI",
+            "date": "2022",
+            "bullets": [
+                "Collected data from _surveys_, _focus groups_, and _interviews_ with **over 200** Chinese students and employers",
+                "Used **factor analysis** and **multiple linear regression** to identify _key factors in networking success_"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "name": "Mandarin Chinese",
+            "level": "Advanced",
+            "years": 5,
+            "bullets": [
+                "Studied 5 years of Mandarin Chinese between high school and college",
+                "Received the **AP Chinese Student of the Year Award** in my senior year of high school",
+                "Conducted an **international project** with students in Hangzhou, China"
+            ]
+        }
+    ]
+}

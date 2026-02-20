@@ -1,2 +1,2 @@
 # zume
-Create quick, beautiful, reusable resumes!
+Create one amazing resume for each job title.
