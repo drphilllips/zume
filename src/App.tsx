@@ -1,12 +1,15 @@
-import './App.css'
+import Footer from './components/root/footer'
 import Header from './components/root/header'
 import { Label } from './components/ui/label'
 
 export default function App() {
   return (
-    <div className="flex flex-col bg-primary items-center justify-center">
+    <>
       <Header />
-      <Label>Zume</Label>
-    </div>
+      <div className="flex flex-row items-center justify-center">
+        <Label>Welcome to Zume!</Label>
+      </div>
+      <Footer />
+    </>
   )
 }
